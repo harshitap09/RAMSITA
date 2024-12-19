@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point of Contact (POC) Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .poc-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .poc-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .poc-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+
+        .poc-info h2 {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .poc-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .poc-info .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info .contact-item {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .poc-info h2 {
+                font-size: 1.8rem;
+            }
+
+            .poc-info p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .poc-info h2 {
+                font-size: 1.5rem;
+            }
+
+            .poc-info p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Point of Contact (POC) Details</h1>
+    </header>
+
+    <div class="poc-container">
+        <!-- POC Information -->
+        <div class="poc-info">
+            <img src="https://via.placeholder.com/150" alt="POC Picture">
+            <h2>John Doe</h2>
+            <p>Conference Event Coordinator</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Email:</strong> <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Office:</strong> Suite 405, Conference Building, 123 Main St.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
