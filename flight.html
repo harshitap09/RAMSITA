@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .ticket-container {
+            padding: 2rem;
+        }
+
+        .ticket-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .ticket-header h2 {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .ticket-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .ticket-details {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .ticket-details h3 {
+            font-size: 1.8rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .ticket-details .flight-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ticket-details .flight-info div {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket-details .flight-info h4 {
+            font-size: 1.3rem;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+
+        .ticket-details .flight-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .ticket-details .flight-info {
+                grid-template-columns: 1fr;
+            }
+
+            .ticket-details h3 {
+                font-size: 1.6rem;
+            }
+
+            .ticket-details .flight-info h4 {
+                font-size: 1.2rem;
+            }
+
+            .ticket-details .flight-info p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .ticket-header h2 {
+                font-size: 1.6rem;
+            }
+
+            .ticket-details h3 {
+                font-size: 1.4rem;
+            }
+
+            .ticket-details .flight-info h4 {
+                font-size: 1rem;
+            }
+
+            .ticket-details .flight-info p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flight Ticket Details</h1>
+    </header>
+
+    <div class="ticket-container">
+
+        <!-- Ticket Header -->
+        <div class="ticket-header">
+            <h2>Speaker's Flight Details</h2>
+            <p>Here are the flight details for the conference speaker.</p>
+        </div>
+
+        <!-- Ticket Details Section -->
+        <div class="ticket-details">
+
+            <h3>Flight Information</h3>
+
+            <div class="flight-info">
+
+                <!-- Departure Info -->
+                <div>
+                    <h4>Departure</h4>
+                    <p><strong>Flight Number:</strong> ABC123</p>
+                    <p><strong>From:</strong> New York (JFK)</p>
+                    <p><strong>To:</strong> San Francisco (SFO)</p>
+                    <p><strong>Departure Time:</strong> 10:30 AM</p>
+                    <p><strong>Date:</strong> March 25, 2024</p>
+                </div>
+
+                <!-- Arrival Info -->
+                <div>
+                    <h4>Arrival</h4>
+                    <p><strong>Arrival Time:</strong> 01:30 PM</p>
+                    <p><strong>Terminal:</strong> 3</p>
+                    <p><strong>Baggage Claim:</strong> 5</p>
+                    <p><strong>Gate:</strong> 12A</p>
+                </div>
+
+            </div>
+
+            <!-- Passenger Info -->
+            <h3>Passenger Details</h3>
+            <div class="flight-info">
+
+                <div>
+                    <h4>Passenger</h4>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Ticket Type:</strong> Business Class</p>
+                    <p><strong>Seat Number:</strong> 12A</p>
+                </div>
+
+                <div>
+                    <h4>Ticket Information</h4>
+                    <p><strong>Ticket Number:</strong> 987654321</p>
+                    <p><strong>Booking Reference:</strong> X1Y2Z3</p>
+                    <p><strong>Price:</strong> $950</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
