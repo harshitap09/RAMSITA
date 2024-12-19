@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .schedule-container {
+            padding: 2rem;
+        }
+
+        .schedule-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .schedule-header h2 {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .schedule-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .schedule-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .schedule-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .schedule-item .time {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .schedule-item .session {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .schedule-item .time {
+                font-size: 1.2rem;
+            }
+
+            .schedule-item .session {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .schedule-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .schedule-item .time {
+                font-size: 1rem;
+            }
+
+            .schedule-item .session {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conference Schedule</h1>
+    </header>
+
+    <div class="schedule-container">
+
+        <div class="schedule-header">
+            <h2>Speaker's Schedule</h2>
+            <p>Check out the schedule for the upcoming sessions of our conference speaker.</p>
+        </div>
+
+        <div class="schedule-list">
+
+            <!-- Schedule Item 1 -->
+            <div class="schedule-item">
+                <div class="time">09:00 AM</div>
+                <div class="session">Opening Remarks</div>
+            </div>
+
+            <!-- Schedule Item 2 -->
+            <div class="schedule-item">
+                <div class="time">10:00 AM</div>
+                <div class="session">Keynote Session: The Future of Technology</div>
+            </div>
+
+            <!-- Schedule Item 3 -->
+            <div class="schedule-item">
+                <div class="time">11:30 AM</div>
+                <div class="session">Panel Discussion: Innovation in AI</div>
+            </div>
+
+            <!-- Schedule Item 4 -->
+            <div class="schedule-item">
+                <div class="time">01:00 PM</div>
+                <div class="session">Lunch Break</div>
+            </div>
+
+            <!-- Schedule Item 5 -->
+            <div class="schedule-item">
+                <div class="time">02:00 PM</div>
+                <div class="session">Workshop: Building Scalable Apps</div>
+            </div>
+
+            <!-- Schedule Item 6 -->
+            <div class="schedule-item">
+                <div class="time">03:30 PM</div>
+                <div class="session">Closing Remarks</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
