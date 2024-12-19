@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .hotel-container {
+            padding: 2rem;
+        }
+
+        .hotel-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hotel-header h2 {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .hotel-details {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .hotel-details h3 {
+            font-size: 1.8rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .hotel-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hotel-info div {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hotel-info h4 {
+            font-size: 1.3rem;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+
+        .hotel-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .hotel-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hotel Details</h1>
+</header>
+
+<div class="hotel-container">
+
+    <div class="hotel-header">
+        <h2>Welcome to Ocean View Hotel</h2>
+        <p>Your perfect holiday destination.</p>
+    </div>
+
+    <div class="hotel-details">
+
+        <h3>Hotel Information</h3>
+
+        <div class="hotel-info">
+            <div>
+                <h4>Location</h4>
+                <p><strong>Address:</strong> 123 Beachside Ave, Malibu, CA</p>
+                <p><strong>City:</strong> Malibu</p>
+                <p><strong>Postal Code:</strong> 90265</p>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@oceanviewhotel.com</p>
+            </div>
+        </div>
+
+        <h3>Room Details</h3>
+
+        <div class="hotel-info">
+            <div>
+                <h4>Deluxe Suite</h4>
+                <p><strong>Beds:</strong> 2 Queen-size</p>
+                <p><strong>Price:</strong> $300 per night</p>
+                <p><strong>Amenities:</strong> Free Wi-Fi, Ocean View, Breakfast Included</p>
+            </div>
+
+            <div>
+                <h4>Standard Room</h4>
+                <p><strong>Beds:</strong> 1 King-size</p>
+                <p><strong>Price:</strong> $200 per night</p>
+                <p><strong>Amenities:</strong> Free Wi-Fi, Mountain View</p>
+            </div>
+        </div>
+
+        <h3>Photos</h3>
+        <div class="hotel-info">
+            <div>
+                <h4>Beach View</h4>
+                <img src="beach.jpg" alt="Beach View" width="100%">
+            </div>
+            <div>
+                <h4>Hotel Lobby</h4>
+                <img src="lobby.jpg" alt="Hotel Lobby" width="100%">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
